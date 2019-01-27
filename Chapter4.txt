@@ -1,0 +1,174 @@
+1. author name,title,price,stock - same
+
+s/w - version,name,pages
+h/w - category,publisher
+
+package library;
+import java.util.Scanner;
+class Common
+{
+    String an,t	;
+    int pr,s,pg,c,v;
+    Scanner sc=new Scanner(System.in);
+    public void Author()
+    {
+        System.out.println("enter the author name:");
+        an=sc.nextLine();
+    }
+    public void Title()
+    {
+        System.out.println("enter the title name:");
+        t=sc.nextLine();
+    }
+    public void Price()
+    {
+        System.out.println("enter the price:");
+        pr=sc.nextInt();
+    }
+    public void Stock()
+    {
+        System.out.println("enter the Stock:");
+        s=sc.nextInt();
+    }
+    public void display()
+    {
+        System.out.println("author name is "+an);
+        System.out.println("title name is "+t);
+        System.out.println("Price is "+pr);
+        System.out.println("Stock is "+s);
+    }
+}
+class Software extends Common
+{
+    public void Version()
+    {
+        System.out.println("enter the version:");
+        v=sc.nextInt();
+    }
+    public void Pages()
+    {
+        System.out.println("enter the pages:");
+        pg=sc.nextInt();
+    }
+    public void display1()
+    {
+        System.out.println("Version is "+v);
+        System.out.println("pages is "+pg);
+    }
+ }
+class Hardware extends Common
+{
+    public void Category()
+    {
+        System.out.println("enter the Category:");
+        c=sc.nextInt();
+    }
+    public void display2()
+    {
+        System.out.println("Category is "+c);
+    }
+}
+public class Library 
+{
+    public static void main(String[] args) 
+    {
+        Software sw=new Software();
+        Hardware hw=new Hardware();
+        System.out.println("Software:");
+        sw.Author();
+        sw.Title();
+        sw.Price();
+        sw.Stock();
+        sw.Version();
+        sw.Pages();
+        sw.display();
+        sw.display1();
+        System.out.println("Hardware:");
+        hw.Author();
+        hw.Title();
+        hw.Stock();
+        hw.Category();
+        hw.display();
+        hw.display2();
+    }
+}
+
+2. chairs and bookshelves
+price,width and height - same
+chairs - model,type
+bookshelves - racks
+
+package furniture;
+import java.util.Scanner;
+class Common
+{
+    int p,w,h,r,q;
+    Scanner sc = new Scanner(System.in);
+    public void Price()
+    {
+        System.out.println("enter the price:");
+        p=sc.nextInt();
+    }
+    public void Width()
+    {
+        System.out.println("enter the width:");
+        w=sc.nextInt();
+    }
+    public void Height()
+    {
+        System.out.println("enter the height:");
+        h=sc.nextInt();
+    }
+    public void display()
+    {
+        System.out.println("price is "+p);
+        System.out.println("Width is "+w);
+        System.out.println("Height is "+h);
+    }
+}
+class Chairs extends Common
+{
+    public void Quantity()
+    {
+        System.out.println("Enter the quantity:");
+        q=sc.nextInt();
+    }
+    public void display1()
+    {
+        System.out.println("type is "+q);
+    }
+}
+class Bookshelves extends Common
+{
+    public void Rack()
+    {
+        System.out.println("enter the number of racks:");
+        r=sc.nextInt();
+    }
+    public void display2()
+    {
+        System.out.println("The racks are "+r);
+    }
+}
+public class Furniture 
+{
+    public static void main(String[] args) 
+    {
+        Chairs c=new Chairs();
+        Bookshelves b=new Bookshelves();
+        System.out.println("Chairs:");
+        c.Price();
+        c.Width();
+        c.Height();
+        c.Quantity();
+        c.display();
+        c.display1();
+        System.out.println("Bookshelves:");
+        b.Price();
+        b.Width();
+        b.Height();
+        b.Rack();
+        b.display();
+        b.display2();
+    }
+}

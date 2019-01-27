@@ -1,0 +1,63 @@
+1. d=ut+(at^2)/2
+
+import java.util.scanner;
+class Distance
+{
+public static void main(String a[])
+{
+Scanner s = new Scanner(System.in);
+System.out.println("enter value for u:");
+int u=s.nextInt();
+System.out.println("enter value for a:");
+int a=s.nextInt();
+System.out.println("enter value for t:");
+int t=s.nextInt();
+int d=(u*t)+(a*t*t)/2;
+System.out.println("The distance is:"+d);
+}
+}
+
+2. volume = (22/7)*r*r*h
+
+import java.util.scanner;
+class Volume
+{
+public static void main(String a[])
+{
+Scanner s = new Scanner(System.in);
+System.out.println("enter value for r:");
+int r=s.nextInt();
+System.out.println("enter value for h:");
+int h=s.nextInt();
+int v=(22/7)*r*r*h;
+System.out.println("The Volume is:"+v);
+}
+}
+
+3. f=(c*1.8)+32
+
+import java.util.scanner;
+class Farenheit
+{
+public static void main(String a[])
+{
+Scanner s = new Scanner(System.in);
+System.out.println("enter value for c:");
+int c=s.nextInt();
+int f=(c*1.8)+32;
+System.out.println("The Farenheit is:"+f);
+}
+}
+
+4. 4*4+8/4 = 12
+
+import java.util.scanner;
+class Value
+{
+public static void main(String a[])
+{
+int v=(4*(4+8))/12;
+System.out.println("The Value is:"+v);
+}
+}
+

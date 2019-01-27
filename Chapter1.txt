@@ -1,0 +1,86 @@
+1. Display() print the value of counter:
+
+import java.io.*;
+public class Sampleclass
+{
+int counter=1;
+public void display()
+{
+System.out.println("Counter value is:"+counter);
+}
+public static void main(String a[])
+{
+    Sampleclass s=new Sampleclass();
+    s.display();
+}
+}
+
+2. Display menu:
+
+import java.util.*;
+public class Employeedetails
+{
+public static void main(String a[])
+{
+int option;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the option:");
+option=s.nextInt();
+switch(option)
+{
+case 1: System.out.println("Enter data");
+	break;
+case 2: System.out.println("Update data");
+	break;
+case 3: System.out.println("Display data");
+	break;
+case 4: System.out.println("Exit");
+	break;
+}
+}
+
+3. Displya the output:
+Error.
+
+4. Coonstructor:
+
+package reservation;
+public class Reservation 
+{
+    int ticketid;
+    public Reservation(int t)
+    {
+        ticketid=t;
+    }
+    void showticket()
+    {
+        System.out.println("ticket id is:"+ticketid);
+    }
+    public static void main(String[] args) 
+    {
+        Reservation r = new Reservation(101);
+        r.showticket();
+    }
+}
+
+5. Grocery
+
+package grocery;
+public class Grocery 
+{    
+    int weight;
+    void weightnow(int w)
+    {
+        this.weight=w;
+    }
+    void checkweight()
+    {
+        System.out.println("weight value is:"+weight);
+    }
+    public static void main(String[] args) 
+    {
+        Grocery g = new Grocery();
+        g.weightnow(50);
+        g.checkweight();
+    }
+}

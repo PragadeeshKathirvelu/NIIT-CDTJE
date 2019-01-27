@@ -1,0 +1,108 @@
+1. Vowel or not
+
+package vowel;
+import java.util.Scanner;
+public class Vowel 
+{
+    public static void main(String[] args) 
+    {
+        char ch;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter a character:");
+        ch=s.next().charAt(0);
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'||ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' )
+            System.out.println(ch + " is vowel");
+        else
+            System.out.println(ch + " is consonant");
+    }
+}
+
+2. Number pattern
+
+import java.util.Scanner;
+public class MainClass
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);         
+        System.out.println("How many rows you want in this pattern?");         
+        int rows = sc.nextInt();         
+        System.out.println("pattern");         
+        for (int i = rows; i >= 1; i--) 
+        {
+            for (int j = 1; j <= i; j++)
+            {
+                System.out.print(j+" ");
+            }             
+            System.out.println();
+        }        
+    }
+}
+
+3. Prime number
+
+import java.util.Scanner;
+public class Prime
+{
+    public static void main(String args[])
+    {
+         int s1, s2, s3, flag = 0, i, j;
+         Scanner s = new Scanner(System.in);
+         System.out.println ("Enter the lower limit :"); 
+         s1 = s.nextInt();
+         System.out.println ("Enter the upper limit :"); 
+         s2 = s.nextInt();
+         System.out.println ("The prime numbers in between the entered limits are :");
+         for(i = s1; i <= s2; i++)
+         {
+             for( j = 2; j < i; j++)
+             {
+                 if(i % j == 0)
+                 {
+                     flag = 0;
+                     break;
+                 }
+                 else
+                 {
+                     flag = 1;
+                 }
+             }
+             if(flag == 1)
+             {
+                 System.out.println(i);
+             }
+         }
+    }
+}
+
+4. Divisible
+
+package divisible;
+import java.util.Scanner;
+public class Divisible 
+{
+    public static void main(String[] args)
+    {
+        int a,b;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter value of a"); 
+        a=s.nextInt();
+        System.out.println("Enter value of b");
+        b=s.nextInt();
+        if(b==0)
+        {
+            System.out.println("error for 0");
+        }
+        else
+        {
+            if(a%b==0)
+            {
+                System.out.println("divisible");
+            }
+            else
+            {
+                System.out.println("not divisible");
+            }
+        }
+    }
+}
